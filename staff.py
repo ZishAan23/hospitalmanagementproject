@@ -133,7 +133,7 @@ def patient_manage_menu():
 		
 		fileio.write_file("patient_data.txt", patients)
 
-		population_graph.update_population()
+		
 
 
 def view_d():
@@ -286,4 +286,7 @@ def staff_menu():
 		elif c=="4":
 			break
 		else:
+
 			input("unrecognised command (enter) ")
+		
+		population_graph.update_population()
