@@ -21,6 +21,8 @@ def order_meds():
 def login():
     global patients
     global p
+    patients = fileio.read_file("patient_data.txt")
+
     while True:
         os.system("cls")
         print("1. Login\n2. Exit\n\n")
@@ -57,4 +59,5 @@ def patient_menu():
         elif c == "5":
             break
         else:
+
             input("Unrecognised command (enter)")
